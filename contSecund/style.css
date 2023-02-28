@@ -1,0 +1,105 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+/* Estilos globais */
+body {
+    background-color: #84848422;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: auto;
+}
+
+main {
+    font-family: Arial, sans-serif;;
+}
+
+main h1 {
+    background-color: #333;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+article {
+    background-color: white;
+}
+
+article h2 {
+    padding-left: 10px;
+}
+
+article p, li {
+    list-style-type: none;
+    padding: 10px;
+    color: black;
+    font-size: 1em;
+    text-align:justify;
+}
+
+article p:last-child {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+/* article a::before {
+    content: '';
+    background-image: url('../imagens/de-volta.png');
+    background-size: cover;
+    background-position: center;
+} */
+
+footer {
+    display: flex;
+    background-color: #333;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+footer p {
+    color: #848484;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    nav ul {
+    flex-direction: column;
+    }
+
+    nav ul li {
+    margin-bottom: 10px;
+    }
+
+    .features {
+    flex-direction: column;
+    }
+
+    .feature {
+    margin-right: 0;
+    margin-bottom: 20px;
+    }
+
+    .articles {
+    flex-direction: column;
+    }
+
+    .article {
+    margin-right: 0;
+    margin-bottom: 20px;
+    }
+
+    footer {
+    height: 40px;
+    }
+
+    footer p {
+    text-transform: lowercase;
+    }
+}
