@@ -184,6 +184,10 @@ footer p {
     .articles {
       flex-direction: column;
     }
+      
+    .articles h2 {
+    padding-bottom: 20px;
+    }
   
     .article {
       margin-right: 0;
