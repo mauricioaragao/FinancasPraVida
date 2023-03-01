@@ -47,13 +47,6 @@ article p:last-child {
     padding-bottom: 40px;
 }
 
-/* article a::before {
-    content: '';
-    background-image: url('../imagens/de-volta.png');
-    background-size: cover;
-    background-position: center;
-} */
-
 footer {
     display: flex;
     background-color: #333;
