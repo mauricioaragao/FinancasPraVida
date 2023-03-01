@@ -92,7 +92,7 @@
   
   .feature {
     flex: 1;
-    margin-right: 20px;
+    margin-right: 0px;
   }
   
   .feature img {
@@ -109,6 +109,10 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
+  }
+
+  .articles h2 {
+    padding-right: 20px;
   }
   
   .article {
