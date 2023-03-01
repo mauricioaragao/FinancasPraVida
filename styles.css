@@ -22,6 +22,7 @@
   nav ul {
     list-style: none;
     display: flex;
+    justify-content: end;
   }
   
   nav ul li {
@@ -86,6 +87,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+    column-gap: 20px;
   }
   
   .feature {
@@ -100,7 +102,7 @@
   }
   
   .feature h2 {
-    margin-top: 20px;
+    margin-top: 0px;
   }
   
   .articles {
@@ -139,13 +141,31 @@ footer p {
 }
 
   /* Responsive styles */
+  @media (min-width: 769px) and (max-width: 1200px) {
+    main {
+      padding: 0px 20px;
+    }
+  }  
+
   @media screen and (max-width: 768px) {
+    main {
+      padding: 0px 5px;
+    }
+      
     nav ul {
       flex-direction: column;
     }
   
     nav ul li {
       margin-bottom: 10px;
+    }
+      
+    .hero {
+      height: 300px;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
     }
   
     .features {
@@ -174,3 +194,9 @@ footer p {
       text-transform: lowercase;
     }
   }
+
+  @media screen and (max-width: 425px) {
+   .hero h1 {
+     font-size: 2em;
+   }
+ }
