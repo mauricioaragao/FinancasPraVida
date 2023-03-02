@@ -33,6 +33,43 @@
     color: #fff;
     text-decoration: none;
   }
+
+/*Parte de criação do menu hambúrguer na página prinicipal*/
+  nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        color: white;
+        height: 60px;
+        padding: 0 20px;
+        }
+
+        .hamburger {
+        display: none;
+        cursor: pointer;
+        }
+
+        .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+        }
+
+        .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        }
+
+        .menu a {
+            color: white;
+            padding-right: 10px;
+        }
   
   main {
     max-width: 1200px;
@@ -163,6 +200,35 @@ footer p {
     nav ul li {
       margin-bottom: 10px;
     }
+      
+  /*Resposividade do menu hámbúrguer*/
+    .hamburger {
+    display: block;
+    }
+    .menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #333;
+    z-index: 1;
+    }
+    .menu li {
+    margin: 10px 0;
+    }
+    .menu a {
+    color: white;
+    text-decoration: none;
+    }
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+    }    
+    
       
     .hero {
       height: 300px;
