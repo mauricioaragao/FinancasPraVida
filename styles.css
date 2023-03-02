@@ -143,6 +143,11 @@
   .feature h2 {
     margin-top: 0px;
   }
+
+  .feature a {
+    color: #000;
+    text-decoration: none;
+  }
   
   .articles {
     display: flex;
