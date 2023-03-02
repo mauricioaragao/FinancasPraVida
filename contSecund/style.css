@@ -98,7 +98,7 @@ footer p {
 }
 
 @media screen and (max-width: 425px) {
-   .hero h1 {
+   main h1 {
      font-size: 1.8em;
      padding: 10px;
    }
