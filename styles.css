@@ -272,5 +272,7 @@ footer p {
   @media screen and (max-width: 425px) {
    .hero h1 {
      font-size: 2em;
+     margin-top: 20px;
+     margin-bottom: 10px;
    }
  }
