@@ -96,3 +96,10 @@ footer p {
     text-transform: lowercase;
     }
 }
+
+@media screen and (max-width: 425px) {
+   .hero h1 {
+     font-size: 2em;
+     padding: 10px;
+   }
+ }
