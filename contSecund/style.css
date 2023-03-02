@@ -98,8 +98,8 @@ footer p {
 }
 
 @media screen and (max-width: 425px) {
-   main h1 {
-     font-size: 1.8em;
-     padding: 10px;
-   }
- }
+    main h1 {
+    font-size: 1.8em;
+    padding: 10px;
+    }
+}
