@@ -42,12 +42,14 @@ article p, li {
     text-align:justify;
 }
 
-main p:last-child {
+/*main p:last-child {
     text-align: right;
     padding-bottom: 40px;
-}
+}*/
 
 a {
+    text-align: right;
+    padding-bottom: 40px;
     text-decoration: none;
     padding: 10px 20px;
     background-color: #33333377;
