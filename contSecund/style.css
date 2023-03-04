@@ -16,19 +16,21 @@ body {
 }
 
 main {
+    background-color: white;
     font-family: Arial, sans-serif;;
 }
 
 main h1 {
     background-color: #333;
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 2em;
     text-align: center;
+    padding: 15px;
 }
 
-article {
+/* article {
     background-color: white;
-}
+} */
 
 article h2 {
     padding-left: 10px;
