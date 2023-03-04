@@ -42,7 +42,7 @@ article p, li {
     text-align:justify;
 }
 
-article p:last-child {
+main p:last-child {
     text-align: right;
     padding-bottom: 40px;
 }
