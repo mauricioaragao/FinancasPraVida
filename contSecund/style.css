@@ -28,9 +28,9 @@ main h1 {
     padding: 15px;
 }
 
-/* article {
-    background-color: white;
-} */
+.article {
+    margin-bottom: 40px;
+}
 
 article h2 {
     padding-left: 10px;
@@ -49,7 +49,7 @@ article p, li {
     padding-bottom: 40px;
 }*/
 
-a {
+main p  {
     text-align: right;
     padding-bottom: 40px;
     text-decoration: none;
