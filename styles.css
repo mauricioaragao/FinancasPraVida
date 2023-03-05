@@ -190,6 +190,27 @@
     color: #848484;
   }
 
+  /* Botão de voltar ao topo */
+  #btn-topo {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 12px;
+    background-color: #5555557d;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  #btn-topo:hover {
+    background-color: #444;
+  }
+
   /* Responsive styles */
   @media (min-width: 769px) and (max-width: 1200px) {
     main {

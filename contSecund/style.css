@@ -7,6 +7,7 @@
 
 /* Estilos globais */
 body {
+    height: 100vh;
     background-color: #84848422;
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -17,19 +18,22 @@ body {
 
 main {
     background-color: white;
-    font-family: Arial, sans-serif;;
+    font-family: Arial, sans-serif;
+    padding: 10px;
 }
 
 main h1 {
-    background-color: #333;
+    background-color: #333333b8;
     color: #fff;
     font-size: 2em;
     text-align: center;
     padding: 15px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 0px 0px 10px 10px;
 }
 
-.article {
-    margin-bottom: 40px;
+article {
+    margin-bottom: 30px;
 }
 
 article h2 {
@@ -44,14 +48,7 @@ article p, li {
     text-align:justify;
 }
 
-/*main p:last-child {
-    text-align: right;
-    padding-bottom: 40px;
-}*/
-
-main p  {
-    text-align: right;
-    padding-bottom: 40px;
+main a  {
     text-decoration: none;
     padding: 10px 20px;
     background-color: #33333377;
@@ -60,6 +57,28 @@ main p  {
     font-weight: bold;
     font-size: 12px;
 }
+
+/* Botão de voltar ao topo */
+#btn-topo {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 12px;
+    background-color: #5555557d;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  #btn-topo:hover {
+    background-color: #444;
+  }
+  
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
