@@ -51,7 +51,7 @@
     display: none;
   }
 
-  div#conteudo-oculto:hover > p {
+  div#conteudo-oculto:active > p {
     display: block;
     color: black;
     background-color: rgba(128, 128, 128, 0.524);
