@@ -178,6 +178,12 @@
     color: #000;
     text-decoration: none;
   }
+
+  .feature:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    transform: scale(1.01);
+    transition-duration: 0.5s;
+  }
   
   .articles {
     display: flex;
