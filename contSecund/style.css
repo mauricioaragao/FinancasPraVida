@@ -36,6 +36,13 @@ article {
     margin-bottom: 30px;
 }
 
+article > img {
+    width: 50%;
+    padding: 10px;
+    border-radius: 20px;
+    float: right;
+}
+
 article h2 {
     padding-left: 10px;
 }
@@ -46,6 +53,7 @@ article p, li {
     color: black;
     font-size: 1em;
     text-align:justify;
+    text-indent: 1rem;
 }
 
 main a  {
