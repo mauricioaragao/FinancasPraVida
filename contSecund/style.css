@@ -44,7 +44,7 @@ article > img {
     float: right;
 }
 
-article h2 {
+article h2, h3 {
     padding-left: 10px;
 }
 
