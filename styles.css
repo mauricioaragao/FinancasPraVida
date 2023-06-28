@@ -232,6 +232,11 @@
         justify-content: space-between;
         padding: 0 20px;
     }
+
+    img.logo {
+      width: 30px;
+      height: 30px;
+    }  
     
     #menu {
         display: block;
@@ -250,7 +255,7 @@
     #nav.active #menu {
         height: 100vh;
         visibility: visible;
-        background-color: #101b7bd9;
+        background-color: #3f3f3ff3;
         padding-top: 60px;
 
     }
@@ -313,52 +318,7 @@
       padding: 0px 5px;
     }
     
-    header {
-      column-gap: 60%;
-    }
-    img.logo {
-      width: 30px;
-      height: 30px;
-    }
-
-    nav ul {
-      flex-direction: column;
-    }
-  
-    nav ul li {
-      margin-bottom: 10px;
-    }
       
-    /*Resposividade do menu hámbúrguer*/
-    .hamburger {
-      display: block;
-    }
-
-    .menu {
-      display: none;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      right: 0;
-      padding: 10px;
-      background-color: #333;
-      z-index: 1;
-    }
-
-    .menu li {
-      margin: 10px 0;
-    }
-
-    .menu a {
-      color: white;
-      text-decoration: none;
-    }
-
-    .menu.active {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }    
     
       
     .hero {
