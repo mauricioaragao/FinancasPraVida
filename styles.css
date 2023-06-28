@@ -57,20 +57,20 @@
     
     #menu a {
         display: block;
-        color: var(--cor-header-nav);
+        color: blue;
         padding: 8px;
     }
     
     #menu a:hover {
         cursor: pointer;
-        color: var(--cor-galeria-e-submit);
+        color: green;
         font-weight: 500;
     }
     
     #btn-mobile {
         display: none;
         background-color: transparent;
-        color: var(--cor-galeria-e-submit);
+        color: green;
         font-weight: 500;
         font-size: 24px;
         border: none;
@@ -278,7 +278,7 @@
         display: block;
         border-top: 3px solid;
         width: 25px;
-        color: var(--cor-galeria-e-submit);
+        color: green;
     }
 
     #hamburguer::after, #hamburguer::before {
