@@ -47,62 +47,36 @@
     text-decoration: none;
   }
 
-  div#conteudo-oculto > p {
-    display: none;
-  }
-
-  div#conteudo-oculto:active > p {
-    display: block;
-    color: black;
-    background-color: rgba(128, 128, 128, 0.524);
-    text-align: justify;
-    width: 500px;
-    margin-top: 170px;
-    transform: translateX(50%);
-    transform: translateY();
-  }
-
-  div#conteudo-oculto:hover {
-    color: green;
-  }
-
 /*Parte de criação do menu hambúrguer na página prinicipal*/
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: white;
-    height: 60px;
-    padding: 0 20px;
-  }
+    #menu {
+        display: flex;
+        font-size: 90%;
+        gap: 20px;
+        height: 100%;
+    }
+    
+    #menu a {
+        display: block;
+        color: var(--cor-header-nav);
+        padding: 8px;
+    }
+    
+    #menu a:hover {
+        cursor: pointer;
+        color: var(--cor-galeria-e-submit);
+        font-weight: 500;
+    }
+    
+    #btn-mobile {
+        display: none;
+        background-color: transparent;
+        color: var(--cor-galeria-e-submit);
+        font-weight: 500;
+        font-size: 24px;
+        border: none;
+    }
 
-  .hamburger {
-    display: none;
-    cursor: pointer;
-  }
-
-  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px 0;
-  }
-
-  .menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .menu a {
-    color: white;
-    padding-right: 10px;
-  }
-  
+/*Parte de configuração do main*/
   main {
     max-width: 1200px;
     margin: 0 auto;
@@ -253,6 +227,88 @@
   }  
 
   @media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 130px;
+        right: 0px;
+        transition: .6s;
+        z-index: 1000;
+        height: 0;
+        visibility: hidden;
+        overflow-y: hidden;
+        text-align: center;
+    }
+
+    #nav.active #menu {
+        height: 100vh;
+        visibility: visible;
+        background-color: #101b7bd9;
+        padding-top: 60px;
+
+    }
+
+    #nav.active #menu a {
+        color: #fff;
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+
+    .formulario {
+        width: 95vw;
+        text-align: center;
+    }
+
+    #btn-mobile {
+        display: flex;
+        align-items: baseline;
+        padding: 8px 16px;
+        gap: 8px;
+        cursor: pointer;
+    }
+
+    #hamburguer {
+        display: block;
+        border-top: 3px solid;
+        width: 25px;
+        color: var(--cor-galeria-e-submit);
+    }
+
+    #hamburguer::after, #hamburguer::before {
+        content: '';
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburguer::before{
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -8px;
+
+    }
+
+
+
+      
     main {
       padding: 0px 5px;
     }
