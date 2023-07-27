@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* CSS para o menu hamburguer */
+.menu-hamburguer {
+    display: none;
+}
+
+.menu-hamburguer label {
+    display: block;
+    cursor: pointer;
+    padding: 56px 10px;
+    font-size: 1.5rem;
+}
+
+.menu-hamburguer label span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin-bottom: 5px;
+}
+
+.menu-hamburguer input[type="checkbox"] {
+    display: none;
+}
+
+/* Mostra o menu hamburguer em dispositivos móveis */
+@media only screen and (max-width: 992px) {
+    .menu-hamburguer {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 999;
+    }
+
+    .menu-hamburguer label {
+        display: block;
+    }
+
+    #linksNavagacao {
+        display: none;
+    }
+
+    .menu-hamburguer input[type="checkbox"]:checked ~ #linksNavagacao {
+        display: block;
+    }
+}
