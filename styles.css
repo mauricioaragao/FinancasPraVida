@@ -1,372 +1,358 @@
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
   
-  /* Estilos globais */
-  body {
-    background-color: #84848422;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
+/* Estilos globais */
+body {
+  background-color: #84848422;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #333;
+  color: #fff;
+  padding: 0px 20px;
+  column-gap: 300px;
+  height: 70px;
+}
+
+img.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+/*Parte de criação do menu hambúrguer na página prinicipal*/
+#menu {
+  display: flex;
+  font-size: 90%;
+  gap: 20px;
+  height: 100%;
+}
+
+#menu a {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px;
+}
+
+#menu a:hover {
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #000;
+  transition: .2s ease-in;
+}
+
+#btn-mobile {
+  display: none;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  border: none;
+}
+
+/*Parte de configuração do main*/
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.hero {
+  background-image: url('imagens/money.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  height:400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0px;
+  text-shadow: 1px 1px 2px  rgb(255, 255, 255);
+}
+
+.hero p {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px black;
+  font-size: 1.2em;
+}
+
+.btn-primary, .btn-secondary {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.1);
+  transition: .2s ease;
+  font-size: 17px;
+}
+
+.btn-secondary {
+  background-color: #f2f2f2;
+  color: #333;
+  margin-left: 10px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  column-gap: 20px;
+}
+
+.feature {
+  flex: 1;
+  margin-right: 0px;
+}
+
+.feature img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.feature h2 {
+  margin-top: 0px;
+}
+
+.feature a {
+  color: #000;
+  text-decoration: none;
+}
+
+.feature:hover {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  transform: scale(1.01);
+  transition-duration: 0.5s;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.articles h2 {
+  padding-right: 20px;
+}
+
+.article {
+  flex: 1;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.article img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.article h3 {
+  margin-top: 20px;
+}
+
+footer {
+  display: flex;
+  background-color: #333;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+footer p {
+  color: #848484;
+}
+
+/* Botão de voltar ao topo */
+#btn-topo {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 12px;
+  background-color: #5555557d;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#btn-topo:hover {
+  background-color: #444;
+}
+
+/* Responsive styles */
+@media (min-width: 769px) and (max-width: 1200px) {
+  main {
+    padding: 0px 20px;
   }
-  
+}  
+
+@media screen and (max-width: 768px) {
   header {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #333;
-    color: #fff;
-    padding: 0px 20px;
-    column-gap: 300px;
-    height: 70px;
+    justify-content: space-between;
+    padding: 0 20px;
   }
 
   img.logo {
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-  }
+  }  
   
-  /* nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: end;
-  }
-  
-  nav ul li {
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    font-size: 15px;
-    font-weight: 600;
-    color: #fff;
-    text-decoration: none;
-  } */
-
-/*Parte de criação do menu hambúrguer na página prinicipal*/
-    #menu {
-        display: flex;
-        font-size: 90%;
-        gap: 20px;
-        height: 100%;
-    }
-    
-    #menu a {
-        display: block;
-        color: #fff;
-        font-size: 15px;
-        font-weight: 600;
-        padding: 8px;
-    }
-    
-    #menu a:hover {
-        cursor: pointer;
-        color: green;
-    }
-    
-    #btn-mobile {
-        display: none;
-        background-color: transparent;
-        color: green;
-        font-weight: 500;
-        font-size: 24px;
-        border: none;
-    }
-
-/*Parte de configuração do main*/
-  main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0px;
-  }
-  
-  .hero {
-    background-image: url('imagens/money.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    height:400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    transition: .6s;
+    z-index: 1000;
+    height: 0;
+    visibility: hidden;
+    overflow-y: hidden;
     text-align: center;
   }
-  
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 0px;
-    text-shadow: 1px 1px 2px  rgb(255, 255, 255);
-  }
-  
-  .hero p {
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 2px black;
-    font-size: 1.2em;
+
+  #nav.active #menu {
+    height: 100vh;
+    visibility: visible;
+    background-color: #3f3f3ff3;
+    padding-top: 60px;
   }
 
-  .btn-primary, .btn-secondary {
-    background-color: #333;
+  #nav.active #menu a {
     color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 10px;
-    font-weight: bold;
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+
+  .formulario {
+    width: 95vw;
+    text-align: center;
+  }
+
+  #btn-mobile {
+    display: flex;
+    align-items: baseline;
+    padding: 8px 16px;
+    gap: 8px;
+    cursor: pointer;
+  }
+
+  #hamburguer {
+    display: block;
+    border-top: 3px solid;
+    width: 25px;
+    color: #fff;
+  }
+
+  #hamburguer::after, #hamburguer::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+  }
+
+  #nav.active #hamburguer {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburguer::before{
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -8px;
   }
   
-  .btn-secondary {
-    background-color: #f2f2f2;
-    color: #333;
-    margin-left: 10px;
-  }
   
+  main {
+    padding: 0px 5px;
+  }
+
+  .hero {
+    height: 300px;
+  }
+
+  .hero h1 {
+    font-size: 2.5em;
+  }
+
   .features {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    column-gap: 20px;
+    flex-direction: column;
   }
-  
+
   .feature {
-    flex: 1;
-    margin-right: 0px;
-  }
-  
-  .feature img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .feature h2 {
-    margin-top: 0px;
-  }
-
-  .feature a {
-    color: #000;
-    text-decoration: none;
-  }
-
-  .feature:hover {
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-    transform: scale(1.01);
-    transition-duration: 0.5s;
-  }
-  
-  .articles {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-  }
-
-  .articles h2 {
-    padding-right: 20px;
-  }
-  
-  .article {
-    flex: 1;
-    margin-right: 20px;
+    margin-right: 0;
     margin-bottom: 20px;
   }
-  
-  .article img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+
+  .articles {
+    flex-direction: column;
   }
-  
-  .article h3 {
-    margin-top: 20px;
+    
+  .articles h2 {
+    padding-bottom: 20px;
   }
-  
+
+  .article {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
   footer {
-    display: flex;
-    background-color: #333;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
+    height: 40px;
   }
 
   footer p {
-    color: #848484;
+    text-transform: lowercase;
   }
+}
 
-  /* Botão de voltar ao topo */
-  #btn-topo {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    font-size: 12px;
-    background-color: #5555557d;
-    color: #ffffff;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 5px;
+@media screen and (max-width: 425px) {
+  .hero h1 {
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
-
-  #btn-topo:hover {
-    background-color: #444;
-  }
-
-  /* Responsive styles */
-  @media (min-width: 769px) and (max-width: 1200px) {
-    main {
-      padding: 0px 20px;
-    }
-  }  
-
-  @media screen and (max-width: 768px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 20px;
-    }
-
-    img.logo {
-      width: 30px;
-      height: 30px;
-    }  
-    
-    #menu {
-        display: block;
-        position: absolute;
-        width: 100%;
-        top: 130px;
-        right: 0px;
-        transition: .6s;
-        z-index: 1000;
-        height: 0;
-        visibility: hidden;
-        overflow-y: hidden;
-        text-align: center;
-    }
-
-    #nav.active #menu {
-        height: 100vh;
-        visibility: visible;
-        background-color: #3f3f3ff3;
-        padding-top: 60px;
-
-    }
-
-    #nav.active #menu a {
-        color: #fff;
-        font-size: 24px;
-        padding-bottom: 20px;
-    }
-
-    .formulario {
-        width: 95vw;
-        text-align: center;
-    }
-
-    #btn-mobile {
-        display: flex;
-        align-items: baseline;
-        padding: 8px 16px;
-        gap: 8px;
-        cursor: pointer;
-    }
-
-    #hamburguer {
-        display: block;
-        border-top: 3px solid;
-        width: 25px;
-        color: green;
-    }
-
-    #hamburguer::after, #hamburguer::before {
-        content: '';
-        display: block;
-        width: 25px;
-        height: 3px;
-        background-color: currentColor;
-        margin-top: 5px;
-        transition: .3s;
-        position: relative;
-    }
-
-    #nav.active #hamburguer {
-        border-top-color: transparent;
-    }
-
-    #nav.active #hamburguer::before{
-        transform: rotate(135deg);
-    }
-
-    #nav.active #hamburguer::after {
-        transform: rotate(-135deg);
-        top: -8px;
-
-    }
-
-
-
-      
-    main {
-      padding: 0px 5px;
-    }
-    
-      
-    
-      
-    .hero {
-      height: 300px;
-    }
-
-    .hero h1 {
-      font-size: 2.5em;
-    }
-  
-    .features {
-      flex-direction: column;
-    }
-  
-    .feature {
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
-  
-    .articles {
-      flex-direction: column;
-    }
-      
-    .articles h2 {
-      padding-bottom: 20px;
-    }
-  
-    .article {
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
-
-    footer {
-      height: 40px;
-    }
-
-    footer p {
-      text-transform: lowercase;
-    }
-  }
-
-  @media screen and (max-width: 425px) {
-   .hero h1 {
-     font-size: 2em;
-     margin-top: 20px;
-     margin-bottom: 10px;
-    }
-  }
+}
