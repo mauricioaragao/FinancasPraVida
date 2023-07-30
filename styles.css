@@ -25,15 +25,13 @@ header {
   justify-content: space-around;
   background-color: #333;
   color: #fff;
-  padding: 0px 20px;
-  column-gap: 300px;
-  height: 70px;
+  padding: 0px 100px;
+  height: 80px;
 }
 
 img.logo {
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
+  margin-top: 5px;
+  width: 90%;
 }
 
 /*Parte de criação do menu hambúrguer na página prinicipal*/
@@ -99,7 +97,7 @@ main {
 .hero p {
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px 2px black;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 .btn-primary, .btn-secondary {
@@ -108,7 +106,7 @@ main {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  margin-top: 10px;
+  margin-top: 20px;
   font-weight: bold;
 }
 
@@ -116,8 +114,9 @@ main {
   background-color: #fff;
   color: #000;
   transform: scale(1.1);
-  transition: .2s ease;
+  transition: .2s ease-in-out;
   font-size: 17px;
+  margin-top: 18px;
 }
 
 .btn-secondary {
@@ -156,7 +155,7 @@ main {
 .feature:hover {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
   transform: scale(1.01);
-  transition-duration: 0.5s;
+  transition-duration: .5s;
 }
 
 .articles {
@@ -222,7 +221,7 @@ footer p {
 /* Responsive styles */
 @media (min-width: 769px) and (max-width: 1200px) {
   main {
-    padding: 0px 20px;
+    padding: 0px 5px;
   }
 }  
 
@@ -234,9 +233,8 @@ footer p {
   }
 
   img.logo {
-    width: 50px;
-    height: 50px;
-  }  
+    width: 80%;
+  }
   
   #menu {
     display: block;
@@ -263,11 +261,6 @@ footer p {
     color: #fff;
     font-size: 24px;
     padding-bottom: 20px;
-  }
-
-  .formulario {
-    width: 95vw;
-    text-align: center;
   }
 
   #btn-mobile {
